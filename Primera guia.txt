@@ -1,0 +1,40 @@
+2- mkdir raul_garcia
+3- cd raul_garcia, mkdir aprendiendo_git
+4- cd aprendiendo_git, git init edu
+5- 	cd edu
+	git config user.name raul_garcia
+	git config user.email raulcuellar@live.com
+6- git status
+7- nano texto1.txt
+-- Se le agrego texto al archivo
+8- git add texto1.txt
+9- git commit -m primer_commit
+10- git log
+11- mkdir directorio1, cd directorio1,nano texto2.txt, nano texto3.txt 
+-- A los archivos texto2.txt y texto3.txt se les agrega texto
+12- cd .. , nano texto1.txt
+13- git diff texto1.txt
+14- git add *.txt, cd directorio1, git add *.txt
+15- No devolvio nada
+16- git reset texto2.txt
+17- git commit -m segundo_commit
+18- git status 
+-- Se analizaron los datos
+19- nano texto2.txt
+20- cd .. ,  nano texto1.txt
+21- git diff texto1.txt
+-- El texto1.txt si devolvio una diferencia, mientras que el texto2.txt que fue sacado de la areá de preparación no mostro nada
+22- git add texto1.txt
+23- git commit -m tercer_commit
+24- git reset texto1.txt, git log, git checkout 
+25- git status
+--solo muestra el primer commit de los 3 que tenia
+    git branch primer_rama
+26- git checkout master
+27- git branch rama2
+28- git checkout rama2
+29- mkdir directorio2, cd directorio2, nano texto4.txt
+30- git add texto4.txt, git commit -m primer_commit_de_rama2
+32- git chekcout master, 
+--No se puede ejecutar el comando git status ni git log en el directorio2 ya que este pertenece a la rama2 estando en la rama master.
+33- git merge rama2
